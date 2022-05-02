@@ -38,7 +38,7 @@ document.querySelector("nav").append(banner_conatiner);
 
 //------- Fetch Api Starts here-------------
 async function getData() {
-  const dataList = await fetch("https://covid-19.dataflowkit.com/v1", {
+  const dataList = await fetch("https://covid-19.dataflowkit.com", {
     method: "GET",
   });
   let data = await dataList.json();
